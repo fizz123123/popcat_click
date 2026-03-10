@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classic popcat click</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #bdaa90;
+        }
+
+        .title {
+            width: 80%;
+            margin-top: 2em;
+            max-width: 600px;
+        }
+
+        .cat-img {
+            width: 100%;
+            text-align: center;
+            font-size: 80px;
+            -webkit-text-stroke: 3px black;
+            flex-grow: 1;
+            max-width: 800px;
+        }
+
+        #p {
+            background-image: url(imgs/p.png);
+            background-position: bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #op {
+            background-image: url(imgs/op.png);
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="title" src="imgs/popcat.svg" alt="popcat!">
+        <div class="cat-img" id="p">0</div>
+        <div id="op"></div>
+    </div>
+
+
+</body>
+
+</html>
