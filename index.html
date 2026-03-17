@@ -49,7 +49,6 @@
 
         #op {
             background-image: url(imgs/op.png);
-            display: none;
         }
     </style>
 </head>
@@ -67,15 +66,16 @@
         let audio = new Audio('pops/pop1.mp3');
         function add(){
             count++;
-            catImg.innerHTML = count;
             audio.play();
+            catImg.innerHTML = count;
+            catImg.id = 'op';
+        }
+        function close(){
+            catImg.id = 'p';
         }
         document.addEventListener('mousedown',add);
+        document.addEventListener('mouseup', close);
         
-
-
-
-
 
     </script>
 
