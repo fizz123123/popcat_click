@@ -33,6 +33,7 @@
         .cat-img {
             width: 100%;
             text-align: center;
+            color: white;
             font-size: 80px;
             -webkit-text-stroke: 3px black;
             flex-grow: 1;
@@ -59,6 +60,24 @@
         <div class="cat-img" id="p">0</div>
         <div id="op"></div>
     </div>
+
+    <script>
+        let count = 0;
+        let catImg = document.getElementById('p');
+        let audio = new Audio('/Users/brian/Desktop/popcat_click/pops/pop1.mp3');
+        function add(){
+            count++;
+            catImg.innerHTML = count;
+            audio.play();
+        }
+        document.addEventListener('mousedown',add);
+        
+
+
+
+
+
+    </script>
 
 
 </body>
